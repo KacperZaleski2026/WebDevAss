@@ -59,6 +59,11 @@ section {
 	text-transform: uppercase;
 }
 
+.date {
+	font-size: 1.4rem;
+	padding-left: 20px;
+}
+
 .btn {
 	margin-top: 1rem;
 	display: inline-block;
