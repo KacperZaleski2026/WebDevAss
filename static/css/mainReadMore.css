@@ -1,0 +1,87 @@
+/* mainReadMore.css */
+
+/* Basic Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-color: #f4f4f4;
+	padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+/* Events Container */
+#events {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+/* Individual Event Styling */
+.event {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 300px;
+	transition: transform 0.3s ease;
+}
+
+.event:hover {
+	transform: scale(1.3);
+}
+
+/* Event Header */
+.event h2 {
+	color: #555;
+	margin-bottom: 10px;
+}
+
+/* Event Description */
+.event p {
+	color: #777;
+	margin-bottom: 10px;
+}
+
+/* Event Time */
+.event strong {
+	color: #333;
+}
+
+/* Media Queries */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+	#events {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.event {
+		width: 80%;
+	}
+}
+
+/* Phones */
+@media (max-width: 600px) {
+	body {
+		padding: 10px;
+	}
+
+	.event {
+		width: 100%;
+	}
+}
