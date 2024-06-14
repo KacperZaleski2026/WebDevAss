@@ -46,6 +46,11 @@ section {
 	max-width: 1200px;
 }
 
+video {
+	width: 400px;
+	border-radius: 2rem;
+}
+
 .heading {
 	text-align: center;
 	padding-bottom: 2rem;

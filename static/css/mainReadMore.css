@@ -41,7 +41,7 @@ h1 {
 }
 
 .event:hover {
-	transform: scale(1.3);
+	transform: scale(1.05);
 }
 
 /* Event Header */
