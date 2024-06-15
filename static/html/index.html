@@ -14,7 +14,6 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 
 <body>
@@ -355,26 +354,21 @@
     <!-- review section ends -->
 
     <!-- contact section starts  -->
-
     <section class="contact" id="contact">
-
         <h1 class="heading"> <span>contact</span> us </h1>
-
-        <form action="">
+        <form id="contactForm">
             <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <input type="text" placeholder="name" name="name" required>
+                <input type="email" placeholder="email" name="email" required>
             </div>
             <div class="inputBox">
-                <input type="number" placeholder="number">
-                <input type="text" placeholder="subject">
+                <input type="tel" placeholder="phone number" name="number" required>
+                <input type="text" placeholder="subject" name="subject" required>
             </div>
-            <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+            <textarea name="message" placeholder="your message" cols="30" rows="10" required></textarea>
             <input type="submit" value="send message" class="btn">
         </form>
-
     </section>
-
     <!-- contact section ends -->
 
     <!-- footer section starts  -->
@@ -449,6 +443,8 @@
     <script src="js/themeToggler.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/btnShowAlert.js"></script>
+    <script src="js/formSubmission.js"></script>
+
 
 </body>
 
