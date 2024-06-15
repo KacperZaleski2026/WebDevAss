@@ -51,6 +51,12 @@ video {
 	border-radius: 2rem;
 }
 
+h4 {
+	font-size: 1.8rem;
+	color: #fff;
+	padding-top: 2rem;
+}
+
 .heading {
 	text-align: center;
 	padding-bottom: 2rem;
@@ -292,53 +298,62 @@ video {
 	color: var(--main-color);
 }
 
-.price .box-container {
+.price .box-container,
+.games .box-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 27rem);
 	justify-content: center;
 	gap: 1.5rem;
 }
 
-.price a {
+.price a,
+.games a {
 	color: #fff;
 }
 
-.price .box-container .box {
+.price .box-container .box,
+.games .box-container .box {
 	padding: 2rem 0;
 	background: #333;
 	border-radius: 0.5rem;
 	text-align: center;
 }
 
-.price .box-container .box:hover {
+.price .box-container .box:hover,
+.games .box-container .box:hover {
 	transform: scale(1.03);
 }
 
-.price .box-container .box .title {
+.price .box-container .box .title,
+.games .box-container .box .title {
 	background: var(--main-color);
 	color: #fff;
 	padding: 1.5rem 0;
 	font-size: 2rem;
 }
 
-.price .box-container .box .amount {
+.price .box-container .box .amount,
+.games .box-container .box .amount {
 	color: #fff;
 	padding-top: 2rem;
 	font-size: 4rem;
 }
 
-.price .box-container .box ul {
+.price .box-container .box ul,
+.games .box-container .box ul {
 	list-style-type: none;
 	padding: 1rem 0;
 }
 
-.price .box-container .box ul li {
+.price .box-container .box ul li,
+.games .box-container .box ul li {
 	font-size: 1.5rem;
 	color: #eee;
 	padding: 1rem 0;
 }
 
-.price .box-container .box ul li i {
+.price .box-container .box ul li i,
+.games .box-container .box ul li i {
 	color: var(--main-color);
 	padding-right: 0.5rem;
 }
