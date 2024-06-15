@@ -249,29 +249,38 @@
 
             <div class="box">
                 <h3 class="title">Single ticket </h3>
-                <h3 class="amount">$35</h3>
+                <h3 class="amount">£35</h3>
                 <ul>
                     <li><i class="fas fa-check"></i>Enterance</li>
-                    <li> <i class="fas fa-check"></i> One welcome drink </li>
-                    <li> <i class="fas fa-check"></i> music and photos </li>
+                    <li> <i class="fas fa-check"></i> One welcome drink for free </li>
+                    <li> <i class="fas fa-check"></i> Music and photos </li>
+                    <li> <i class="fas fa-check"></i> Access to drink and snack stops </li>
+                    <li> <i class="fas fa-check"></i> 30% discount for next year event</li>
                     <li> <i class="fas fa-check"></i> Attendance order(Sticker) </li>
                 </ul>
-                <a href="#" class="btn">check out</a>
+                <a class="btn" onclick="showModal()">check out</a>
             </div>
 
             <div class="box">
                 <h3 class="title">All inclusive pack</h3>
-                <h3 class="amount">$300</h3>
+                <h3 class="amount">£300</h3>
                 <ul>
                     <li><i class="fas fa-check"></i>Enterance</li>
-                    <li> <i class="fas fa-check"></i> Song request </li>
-                    <li> <i class="fas fa-check"></i> music and photos </li>
-                    <li> <i class="fas fa-check"></i> unlimited food and drinks </li>
+                    <li> <i class="fas fa-check"></i> Music and photos </li>
+                    <li> <i class="fas fa-check"></i> Unlimited food and drinks </li>
                     <li> <i class="fas fa-check"></i> Attendance order(Sticker) </li>
+                    <li> <i class="fas fa-check"></i> Back Stage Visit on Demand! </li>
+                    <li> <i class="fas fa-check"></i> 50% discount on next year Event</li>
                 </ul>
-                <a href="#" class="btn">check out</a>
+                <a class="btn" onclick="showModal()">check out</a>
             </div>
-
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <p>Tickets are currently not available. Selling starts from 10.06.2024</p>
+                </div>
+            </div>
 
 
 
@@ -283,7 +292,7 @@
 
     <section class="reivew" id="review">
 
-        <h1 class="heading">client's <span>review</span></h1>
+        <h1 class="heading">Guest's <span>reviews</span></h1>
 
         <div class="swiper reviews-slider">
 
@@ -292,10 +301,10 @@
                 <div class="swiper-slide box">
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
-                        <img src="images/pic-1.png" alt="">
+                        <img src="images/pic-1.png" alt="Daniel Lubiejewski" title="Daniel Lubiejewski">
                         <div class="user-info">
-                            <h3>john deo</h3>
-                            <span>happy clients</span>
+                            <h3>Daniel Lubiejewski</h3>
+                            <span>Amazing place for families<br> and to Dance.</span>
                         </div>
                     </div>
                     <p></p>
@@ -304,10 +313,10 @@
                 <div class="swiper-slide box">
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
-                        <img src="images/pic-2.png" alt="">
+                        <img src="images/pic-2.png" alt="Britney Spears" title="Britney Spears">
                         <div class="user-info">
-                            <h3>john deo</h3>
-                            <span>happy clients</span>
+                            <h3>Britney Spears</h3>
+                            <span>Love this Events!!!</span>
                         </div>
                     </div>
                     <p></p>
@@ -316,10 +325,10 @@
                 <div class="swiper-slide box">
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
-                        <img src="images/pic-3.png" alt="">
+                        <img src="images/pic-3.png" alt="Arwind Gupta" title="Arwind Gupta">
                         <div class="user-info">
-                            <h3>john deo</h3>
-                            <span>happy clients</span>
+                            <h3>Arwind Gupta</h3>
+                            <span>It could be better. <br>Not enough single ladies.</span>
                         </div>
                     </div>
                     <p></p>
@@ -328,10 +337,10 @@
                 <div class="swiper-slide box">
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
-                        <img src="images/pic-4.png" alt="">
+                        <img src="images/pic-4.png" alt="Caroline Kardashian" title="Caroline Kardashian">
                         <div class="user-info">
-                            <h3>john deo</h3>
-                            <span>happy clients</span>
+                            <h3>Caroline Kardashian</h3>
+                            <span>Will be there next year, defo!!!</span>
                         </div>
                     </div>
                     <p></p>
@@ -436,9 +445,10 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- custom js file link  -->
+    <!--js file links-->
     <script src="js/themeToggler.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/btnShowAlert.js"></script>
 
 </body>
 
