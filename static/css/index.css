@@ -299,6 +299,10 @@ video {
 	gap: 1.5rem;
 }
 
+.price a {
+	color: #fff;
+}
+
 .price .box-container .box {
 	padding: 2rem 0;
 	background: #333;

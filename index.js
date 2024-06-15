@@ -17,6 +17,11 @@ app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname, "static", "html", "index.html"));
 });
 
+// Route to redirect to external website
+app.get("/", (req, res) => {
+	res.redirect("https://www.grandivy.com/");
+});
+
 // Route to get main stage events
 app.get("/api/main-stage", (req, res) => {
 	const dbPath = path.join(__dirname, "static", "db", "mainStage.db");
