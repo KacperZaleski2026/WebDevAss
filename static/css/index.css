@@ -281,10 +281,11 @@ video {
 	bottom: 0;
 }
 
-.gallery .box-container .box .icons a {
-	font-size: 2rem;
+.gallery .box-container .box .icons h2 {
+	font-size: 1.3rem;
 	margin: 0.5rem 1rem;
 	color: #fff;
+	text-transform: none;
 }
 
 .gallery .box-container .box .icons a:hover {
@@ -458,6 +459,10 @@ video {
 .footer .box-container .box a:hover i {
 	padding-right: 1.5rem;
 	color: #fff;
+}
+
+#footmail {
+	text-transform: none;
 }
 
 .footer .credit {
