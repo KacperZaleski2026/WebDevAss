@@ -343,6 +343,10 @@ video {
 	padding-right: 0.5rem;
 }
 
+.myGame-container {
+	padding-top: 10px;
+}
+
 .reivew .box {
 	border-radius: 0.5rem;
 	background: #333;

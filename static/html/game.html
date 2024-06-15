@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Last Name Game</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #222;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #game-container {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+
+        #guess-input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #hint,
+        #message {
+            margin: 20px 0;
+            color: #495057;
+            font-size: 16px;
+        }
+
+        #play-again {
+            display: none;
+            background-color: #28a745;
+        }
+
+        #play-again:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-container">
+        <h1>Guess the Last Name</h1>
+        <input type="text" id="guess-input" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <div id="hint"></div>
+        <div id="message"></div>
+        <button id="play-again" onclick="startGame()">Play Again</button>
+    </div>
+
+
+    <script src="/static/js/myGame.js"></script>
+</body>
+
+</html>
