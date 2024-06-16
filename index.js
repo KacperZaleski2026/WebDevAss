@@ -106,6 +106,32 @@ app.post("/api/contact", (req, res) => {
 	}
 });
 
+// Route to get lineup data for a specific year
+app.get("/api/lineup/:year", (req, res) => {
+	const year = req.params.year;
+	const dbPath = path.join(__dirname, "static", "db", "lineup.db");
+	const db = new sqlite3.Database(dbPath, (err) => {
+		if (err) {
+			return res.status(500).json({ error: err.message });
+		}
+	});
+
+	const query =
+		"SELECT * FROM lineup WHERE year = ? ORDER BY year, stage, time";
+
+	db.all(query, [year], (err, rows) => {
+		if (err) {
+			return res.status(500).json({ error: err.message });
+		}
+		res.json({ data: rows });
+		db.close((err) => {
+			if (err) {
+				console.error(err.message);
+			}
+		});
+	});
+});
+
 app.listen(port, () => {
 	console.log(`Server is running at PORT no: ${port}`);
 });

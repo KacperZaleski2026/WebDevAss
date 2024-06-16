@@ -1,0 +1,125 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+select {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, #ffffff, #d3d3d3);
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Heading styling */
+h1 {
+	color: #333;
+	margin-bottom: 20px;
+}
+
+div {
+	margin-bottom: 20px;
+}
+
+label {
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+select {
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+p {
+}
+
+#lineup-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	max-width: 1200px;
+}
+
+/* Styling for each lineup item */
+.lineup-item {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+.lineup-item img {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	border-radius: 5px 5px 0 0;
+	transition: filter 0.3s;
+}
+
+.lineup-item h2 {
+	font-size: 18px;
+	margin: 10px 0;
+	color: #555;
+}
+
+.lineup-item p {
+	font-size: 14px;
+	margin: 5px 0;
+	color: #777;
+}
+
+/* Hover effect for lineup items */
+.lineup-item:hover {
+	transform: scale(1.5);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.lineup-item:hover img {
+	filter: grayscale(100%);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+	body {
+		margin: 10px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	label {
+		font-size: 16px;
+	}
+
+	select {
+		font-size: 14px;
+	}
+
+	.lineup-item {
+		width: 100%;
+		max-width: 300px;
+	}
+}
