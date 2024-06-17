@@ -22,7 +22,6 @@ h1 {
 	margin-bottom: 20px;
 }
 
-/* Events Container */
 #events {
 	display: flex;
 	flex-wrap: wrap;
@@ -30,7 +29,6 @@ h1 {
 	justify-content: center;
 }
 
-/* Individual Event Styling */
 .event {
 	background-color: #fff;
 	border-radius: 8px;
@@ -44,24 +42,21 @@ h1 {
 	transform: scale(1.05);
 }
 
-/* Event Header */
 .event h2 {
 	color: #555;
 	margin-bottom: 10px;
 }
 
-/* Event Description */
 .event p {
 	color: #777;
 	margin-bottom: 10px;
 }
 
-/* Event Time */
 .event strong {
 	color: #333;
 }
 
-/* Media Queries */
+/* Media query for smaller screens */
 
 /* Tablets and small laptops */
 @media (max-width: 992px) {

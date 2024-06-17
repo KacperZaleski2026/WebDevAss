@@ -600,7 +600,7 @@ h4 {
 	}
 }
 
-/* media queries  */
+/* Media query for smaller screens */
 
 @media (max-width: 991px) {
 	html {

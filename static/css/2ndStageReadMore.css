@@ -26,8 +26,8 @@ h1 {
 }
 
 .event {
-	background-color: #fffacd; /* pastelowy żółty */
-	border-radius: 15px; /* bardziej zaokrąglone rogi */
+	background-color: #fffacd;
+	border-radius: 15px;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	width: 300px;
